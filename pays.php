@@ -1,13 +1,13 @@
 <?php
 /**
- * Package Voyage
+ * Package Pays
  * Version 1.0.0
  */
 /*
-Plugin name: Voyage
-Plugin uri: https://github.com/eddytuto
+Plugin name: Pays
+Plugin uri: https://github.com/GabriellePelletier/ef-pays
 Version: 1.0.0
-Description: Permet d'afficher les destinations qui répondent à certains critères
+Description: Permet d'afficher les pays des destinations
 */
 echo header("Access-Control-Allow-Origin: http://localhost:80");
 function eddym_enqueue()
@@ -20,14 +20,14 @@ function eddym_enqueue()
 // wp_enqueue_scripts // le hook
 
 $version_css = filemtime(plugin_dir_path( __FILE__ ) . "style.css");
-$version_js = filemtime(plugin_dir_path(__FILE__) . "js/voyage.js");
-wp_enqueue_style(   'em_plugin_voyage_css',
+$version_js = filemtime(plugin_dir_path(__FILE__) . "js/pays.js");
+wp_enqueue_style(   'em_plugin_pays_css',
                      plugin_dir_url(__FILE__) . "style.css",
                      array(),
                      $version_css);
 
-wp_enqueue_script(  'em_plugin_voyage_js',
-                    plugin_dir_url(__FILE__) ."js/voyage.js",
+wp_enqueue_script(  'em_plugin_pays_js',
+                    plugin_dir_url(__FILE__) ."js/pays.js",
                     array(),
                     $version_js,
                     true);
@@ -47,9 +47,9 @@ function creer_bouton(){
 }
 
 /* Création de la liste des destinations en HTML */
-function creation_destinations(){
+function creation_pays(){
     $contenu = '<div class="contenu__restapi">'. creer_bouton() .'</div>';
     return $contenu;
 }
 
-add_shortcode('em_destination', 'creation_destinations');
+add_shortcode('em_pays', 'creation_pays');

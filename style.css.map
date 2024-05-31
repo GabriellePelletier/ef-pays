@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "pays/style.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE;EACA;EACA;;;AAGF;EACE",
+  "file": "style.css"
+}

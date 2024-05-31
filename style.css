@@ -1,4 +1,4 @@
-.contenu__restapi {
+.contenu_restapi {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -6,4 +6,4 @@
 
 .restapi_carte {
   flex: 1 0 250px;
-}
+}/*# sourceMappingURL=style.css.map */

@@ -37,6 +37,7 @@
         data.forEach(function (article) {
           let titre = article.title.rendered;
           let contenu = article.content.rendered.substring(0, 200);
+          // let featuredImage = article.img.attachment-medium;
           console.log(titre);
           let carte = document.createElement("div");
           carte.classList.add("restapi__carte");

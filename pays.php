@@ -35,7 +35,7 @@ wp_enqueue_script(  'em_plugin_pays_js',
 add_action('wp_enqueue_scripts', 'eddym_enqueue');
 
 function creer_bouton(){
-    $excluded_categories = array(1, 10, 12, 17, 18, 19, 20, 21); // IDs of categories to exclude
+    $excluded_categories = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21); // IDs of categories to exclude
     $categories = get_categories(array('exclude' => $excluded_categories));
     $contenu = "";
     foreach($categories as $elm_categorie){
